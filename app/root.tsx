@@ -11,6 +11,7 @@ import { withEmotionCache } from '@emotion/react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { ServerStyleContext, ClientStyleContext } from './context'
 import { useContext, useEffect } from "react";
+import NavigationBar from "components/navigation/NavigationBar";
 
 export const links: LinksFunction = () => {
   return [
@@ -84,6 +85,7 @@ export default function App() {
     <Document>
       <ChakraProvider>
         <Outlet />
+        <NavigationBar />
       </ChakraProvider>
     </Document>
   );
