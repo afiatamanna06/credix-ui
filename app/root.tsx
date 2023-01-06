@@ -8,10 +8,11 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import { withEmotionCache } from '@emotion/react'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
 import { ServerStyleContext, ClientStyleContext } from './context'
 import { useContext, useEffect } from "react";
 import NavigationBar from "components/navigation/NavigationBar";
+import theme from "theme/theme";
 
 export const links: LinksFunction = () => {
   return [
@@ -96,6 +97,7 @@ export default function App() {
   return (
     <Document>
       <ChakraProvider>
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Outlet />
         <NavigationBar />
       </ChakraProvider>

@@ -1,10 +1,16 @@
-import { Flex } from "@chakra-ui/react"
+import { Box, Button, Flex, Switch, useColorMode } from "@chakra-ui/react"
 import NavigationMarquee from "./NavigationMarquee"
 
 function NavigationBar() {
+
+  const { colorMode, toggleColorMode } = useColorMode()
+  
   return (
-    <Flex fontFamily="'IBM Plex Mono', monospace">
+    <Flex direction="column" fontFamily="'IBM Plex Mono', monospace">
       <NavigationMarquee />
+      <Box>
+      <Switch size='md' onChange={toggleColorMode} />
+      </Box>
     </Flex>
   )
 }
