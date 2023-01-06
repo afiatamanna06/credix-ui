@@ -1,8 +1,15 @@
-
+import Marquee from "react-fast-marquee";
 
 function NavigationMarquee() {
   return (
-    <div>NavigationMarquee</div>
+    <Marquee
+      delay={12}
+      direction="left"
+      play={true}
+      gradientWidth={0}
+    >
+
+    </Marquee>
   )
 }
 
