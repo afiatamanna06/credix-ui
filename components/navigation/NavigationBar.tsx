@@ -1,8 +1,10 @@
-
+import { Flex } from "@chakra-ui/react"
 
 function NavigationBar() {
   return (
-    <div>NavigationBar</div>
+    <Flex fontFamily="'IBM Plex Mono', monospace">
+      Navigation Bar
+    </Flex>
   )
 }
 
