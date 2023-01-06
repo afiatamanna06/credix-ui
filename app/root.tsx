@@ -19,6 +19,10 @@ export const links: LinksFunction = () => {
       href: "/logo.png",
       type: "image/png",
     },
+    {
+      rel: "stylesheet",
+      href: "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css",
+    },
   ]
 }
 
