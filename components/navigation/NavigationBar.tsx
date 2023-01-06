@@ -1,9 +1,10 @@
 import { Flex } from "@chakra-ui/react"
+import NavigationMarquee from "./NavigationMarquee"
 
 function NavigationBar() {
   return (
     <Flex fontFamily="'IBM Plex Mono', monospace">
-      Navigation Bar
+      <NavigationMarquee />
     </Flex>
   )
 }
