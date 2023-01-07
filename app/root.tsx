@@ -98,8 +98,8 @@ export default function App() {
     <Document>
       <ChakraProvider>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-        <Outlet />
         <NavigationBar />
+        <Outlet />
       </ChakraProvider>
     </Document>
   );
