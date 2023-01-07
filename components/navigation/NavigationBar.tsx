@@ -7,8 +7,6 @@ import {
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
-import LogoBlack from "../../public/logo_black.svg"
-import LogoWhite from "../../public/logo_white.svg"
 import NavigationMarquee from "./NavigationMarquee";
 
 function NavigationBar() {
@@ -20,15 +18,20 @@ function NavigationBar() {
   return (
     <Flex direction="column" fontFamily="'IBM Plex Mono', monospace">
       <NavigationMarquee />
-      <Flex justify="space-between" alignItems="center" bg={bg} color={color}>
+      <Flex justify="space-between" alignItems="center" bg={bg} color={color} px={[6, 6, 20, 28, 44]} py={[6, 6, 8, 8, 10]}>
         {colorMode === "light" ? (
-          <Image src="/logo_black.png" alt="" />
+          <Image src="/logo_black.png" h={["4rem"]} w="3rem" alt="" />
         ) : (
-          <Image src="/logo_white.png" alt="" />
+          <Image src="/logo_white.png" h={["4rem"]} w="3rem" alt="" />
         )}
-        <Box>
-          <Switch size="md" onChange={toggleColorMode} />
-        </Box>
+        <Flex>
+          <Flex>
+
+          </Flex>
+          <Box>
+            <Switch size="md" colorScheme="blackAlpha" onChange={toggleColorMode} />
+          </Box>
+        </Flex>
       </Flex>
     </Flex>
   );
