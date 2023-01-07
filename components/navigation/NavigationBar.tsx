@@ -7,13 +7,15 @@ import {
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { Link } from "@remix-run/react";
+import { navigationLinks } from "./NavigationBarLinks";
 import NavigationMarquee from "./NavigationMarquee";
 
 function NavigationBar() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   const bg = useColorModeValue("white", "black");
-  const color = useColorModeValue("white", "black");
+  const color = useColorModeValue("black", "white");
 
   return (
     <Flex direction="column" fontFamily="'IBM Plex Mono', monospace">
@@ -24,11 +26,17 @@ function NavigationBar() {
         ) : (
           <Image src="/logo_white.png" h={["4rem"]} w="3rem" alt="" />
         )}
-        <Flex>
-          <Flex>
-
+        <Flex gap={12}>
+          <Flex gap={8} display={["none", "none", "flex", "flex", "flex"]}>
+            {navigationLinks.map(({path, name, target}) => (
+              <Box key={name}>
+                <Link to={path}>
+                  {name}
+                </Link>
+              </Box>
+            ))}
           </Flex>
-          <Box>
+          <Box display={["none", "none", "flex", "flex", "flex"]}>
             <Switch size="md" colorScheme="blackAlpha" onChange={toggleColorMode} />
           </Box>
         </Flex>
