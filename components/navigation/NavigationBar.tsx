@@ -66,10 +66,7 @@ function NavigationBar() {
               <DrawerHeader>
                 <NavigationBarDrawer onDrawerClose={onClose} />
               </DrawerHeader>
-              <DrawerFooter borderTopWidth="1px">
-                <Flex justify="center" w="full" onClick={onClose}>
-                  <i className="ri-close-line ri-lg"></i>
-                </Flex>
+              <DrawerFooter>
               </DrawerFooter>
             </DrawerContent>
           </Drawer>
