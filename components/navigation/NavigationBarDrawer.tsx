@@ -20,7 +20,7 @@ function NavigationBarDrawer({ onDrawerClose }: propTypes) {
   const color = useColorModeValue("black", "white");
 
   return (
-    <Flex direction="column" w="full" bg={bg} color={color} fontFamily="'IBM Plex Mono', monospace">
+    <Flex direction="column" w="full" bg={bg} color={color} gap={6} fontFamily="'IBM Plex Mono', monospace">
       <Flex justify="space-between" alignItems="center">
         <Box>
           <Link to="/">
@@ -44,14 +44,14 @@ function NavigationBarDrawer({ onDrawerClose }: propTypes) {
           </Flex>
         </Flex>
       </Flex>
-      <Flex direction="column">
+      <Flex direction="column" gap={4}>
         {navigationLinks.map(({ path, name, target }) => (
           <Box key={name} fontWeight="normal" fontSize="md">
             <Link to={path}>{name}</Link>
           </Box>
         ))}
       </Flex>
-      <Box w="full">
+      <Box w="full" mt="12">
         <Button
           bg={color}
           color={bg}
