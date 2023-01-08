@@ -21,7 +21,7 @@ import NavigationMarquee from "./NavigationMarquee";
 function NavigationBar() {
   const { colorMode, toggleColorMode } = useColorMode();
 
-  const bg = useColorModeValue("white", "black");
+  const bg = useColorModeValue("#f6f6f6", "black");
   const color = useColorModeValue("black", "white");
   const { isOpen, onOpen, onClose } = useDisclosure();
 

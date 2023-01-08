@@ -2,7 +2,7 @@ import { Button, Flex, useColorModeValue } from "@chakra-ui/react";
 
 export default function Index() {
 
-  const bg = useColorModeValue("white", "black");
+  const bg = useColorModeValue("#f6f6f6", "black");
   const color = useColorModeValue("white", "black");
   
   return (

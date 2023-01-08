@@ -16,7 +16,7 @@ interface propTypes {
 
 function NavigationBarDrawer({ onDrawerClose }: propTypes) {
   const { colorMode, toggleColorMode } = useColorMode();
-  const bg = useColorModeValue("white", "black");
+  const bg = useColorModeValue("#f6f6f6", "black");
   const color = useColorModeValue("black", "white");
 
   return (
