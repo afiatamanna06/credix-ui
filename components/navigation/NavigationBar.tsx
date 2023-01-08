@@ -21,11 +21,15 @@ function NavigationBar() {
     <Flex direction="column" fontFamily="'IBM Plex Mono', monospace">
       <NavigationMarquee />
       <Flex justify="space-between" alignItems="center" bg={bg} color={color} px={[6, 6, 20, 28, 44]} py={[6, 6, 8, 8, 10]}>
-        {colorMode === "light" ? (
-          <Image src="/logo_black.png" h={["4rem"]} w="3rem" alt="" />
-        ) : (
-          <Image src="/logo_white.png" h={["4rem"]} w="3rem" alt="" />
-        )}
+        <Box>
+          <Link to="/">
+            {colorMode === "light" ? (
+              <Image src="/logo_black.png" h={["4rem"]} w="3rem" alt="" />
+            ) : (
+              <Image src="/logo_white.png" h={["4rem"]} w="3rem" alt="" />
+            )}
+          </Link>
+        </Box>
         <Flex gap={12}>
           <Flex gap={8} display={["none", "none", "flex", "flex", "flex"]}>
             {navigationLinks.map(({path, name, target}) => (
