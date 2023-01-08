@@ -1,6 +1,8 @@
-import React from 'react'
+interface propTypes {
+    onDrawerClose: any;
+  }
 
-function NavigationBarDrawer() {
+function NavigationBarDrawer({ onDrawerClose }: propTypes) {
   return (
     <div>NavigationBarDrawer</div>
   )

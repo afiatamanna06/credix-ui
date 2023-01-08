@@ -6,8 +6,15 @@ import {
   Switch,
   useColorMode,
   useColorModeValue,
+  Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerHeader,
+  DrawerFooter,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { Link } from "@remix-run/react";
+import NavigationBarDrawer from "./NavigationBarDrawer";
 import { navigationLinks } from "./NavigationBarLinks";
 import NavigationMarquee from "./NavigationMarquee";
 
@@ -16,6 +23,7 @@ function NavigationBar() {
 
   const bg = useColorModeValue("white", "black");
   const color = useColorModeValue("black", "white");
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Flex direction="column" fontFamily="'IBM Plex Mono', monospace">
@@ -38,6 +46,33 @@ function NavigationBar() {
           </Link>
         </Box>
         <Flex gap={[12, 14, 20]} alignItems="center">
+          <Box
+            p="2"
+            display={["block", "block", "none", "none", "none"]}
+            onClick={onOpen}
+            cursor="pointer"
+          >
+            <i className="ri-menu-line ri-lg"></i>
+          </Box>
+          <Drawer size="full" onClose={onClose} isOpen={isOpen}>
+            <DrawerOverlay
+              display={["block", "block", "none", "none", "none"]}
+            />
+            <DrawerContent
+              display={["block", "block", "none", "none", "none"]}
+              bg={bg}
+              color={color}
+            >
+              <DrawerHeader>
+                <NavigationBarDrawer onDrawerClose={onClose} />
+              </DrawerHeader>
+              <DrawerFooter borderTopWidth="1px">
+                <Flex justify="center" w="full" onClick={onClose}>
+                  <i className="ri-close-line ri-lg"></i>
+                </Flex>
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
           <Flex gap={8} display={["none", "none", "flex", "flex", "flex"]}>
             {navigationLinks.map(({ path, name, target }) => (
               <Box key={name}>
