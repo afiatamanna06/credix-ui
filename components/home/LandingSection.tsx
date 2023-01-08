@@ -1,9 +1,14 @@
-
+import { Flex, useColorModeValue } from "@chakra-ui/react";
+import HomeAuroraSection from "./HomeAuroraSection";
 
 function LandingSection() {
+  const bg = useColorModeValue("#f6f6f6", "black");
+  const color = useColorModeValue("white", "black");
   return (
-    <div>LandingSection</div>
-  )
+    <Flex bg={bg} color={color}>
+      <HomeAuroraSection />
+    </Flex>
+  );
 }
 
-export default LandingSection
+export default LandingSection;

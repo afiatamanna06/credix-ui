@@ -1,4 +1,5 @@
 import { Button, Flex, useColorModeValue } from "@chakra-ui/react";
+import LandingSection from "components/home/LandingSection";
 
 export default function Index() {
 
@@ -8,7 +9,7 @@ export default function Index() {
   return (
     <div>
       <Flex direction="column" minH="100vh" bg={bg} color={color} px={[6, 6, 20, 28, 44]}>
-
+        <LandingSection />
       </Flex>
     </div>
   );
