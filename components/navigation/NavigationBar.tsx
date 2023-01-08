@@ -20,7 +20,14 @@ function NavigationBar() {
   return (
     <Flex direction="column" fontFamily="'IBM Plex Mono', monospace">
       <NavigationMarquee />
-      <Flex justify="space-between" alignItems="center" bg={bg} color={color} px={[6, 6, 20, 28, 44]} py={[6, 6, 8, 8, 10]}>
+      <Flex
+        justify="space-between"
+        alignItems="center"
+        bg={bg}
+        color={color}
+        px={[6, 6, 8, 28, 44]}
+        py={[6, 6, 8, 8, 10]}
+      >
         <Box>
           <Link to="/">
             {colorMode === "light" ? (
@@ -30,19 +37,46 @@ function NavigationBar() {
             )}
           </Link>
         </Box>
-        <Flex gap={12}>
+        <Flex gap={[12, 14, 20]} alignItems="center">
           <Flex gap={8} display={["none", "none", "flex", "flex", "flex"]}>
-            {navigationLinks.map(({path, name, target}) => (
+            {navigationLinks.map(({ path, name, target }) => (
               <Box key={name}>
-                <Link to={path}>
-                  {name}
-                </Link>
+                <Link to={path}>{name}</Link>
               </Box>
             ))}
           </Flex>
-          <Box display={["none", "none", "flex", "flex", "flex"]}>
-            <Switch size="md" colorScheme="blackAlpha" onChange={toggleColorMode} />
-          </Box>
+          <Flex
+            display={["none", "none", "flex", "flex", "flex"]}
+            alignItems="center"
+            gap={8}
+          >
+            <Box>
+              <Button
+                bg={color}
+                color={bg}
+                border="1px"
+                borderColor={color}
+                borderRadius="4px"
+                fontSize="xs"
+                fontWeight="semibold"
+                px={12}
+                py={6}
+                _hover={{
+                  bg: bg,
+                  color: color
+                }}
+              >
+                Invest
+              </Button>
+            </Box>
+            <Box>
+              <Switch
+                size="md"
+                colorScheme="blackAlpha"
+                onChange={toggleColorMode}
+              />
+            </Box>
+          </Flex>
         </Flex>
       </Flex>
     </Flex>
