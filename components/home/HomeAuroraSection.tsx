@@ -14,8 +14,8 @@ function HomeAuroraSection() {
 
   return (
     <Box
-      maxW={["15rem", "15rem", "25rem", "25rem"]}
-      minH={["15rem", "15rem", "25rem", "25rem"]}
+      maxW={["full", "full", "28rem", "28rem"]}
+      minH={["15rem", "15rem", "22rem", "22rem"]}
       w="100%"
       position="relative"
       overflow="hidden"
@@ -29,7 +29,7 @@ function HomeAuroraSection() {
         rounded="full"
         position="absolute"
         animation={animation}
-        top="-20%"
+        top="-30%"
         left="-20%"
       ></Box>
       <Box
@@ -64,7 +64,7 @@ function HomeAuroraSection() {
         bg="rgb(255, 235, 0)"
         h="15rem"
         w="15rem"
-        zIndex={1}
+        zIndex={2}
         animation={animation}
         sx={{
             animationDelay: "4s",
