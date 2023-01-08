@@ -63,7 +63,7 @@ function NavigationBar() {
                 py={6}
                 _hover={{
                   bg: bg,
-                  color: color
+                  color: color,
                 }}
               >
                 Invest
