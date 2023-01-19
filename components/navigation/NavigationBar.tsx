@@ -14,6 +14,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { Link } from "@remix-run/react";
+import CommonButton from "components/common/CommonButton";
 import NavigationBarDrawer from "./NavigationBarDrawer";
 import { navigationLinks } from "./NavigationBarLinks";
 import NavigationMarquee from "./NavigationMarquee";
@@ -83,23 +84,14 @@ function NavigationBar() {
             gap={8}
           >
             <Box>
-              <Button
+              <CommonButton
                 bg={color}
                 color={bg}
-                border="1px"
                 borderColor={color}
-                borderRadius="4px"
-                fontSize="xs"
-                fontWeight="semibold"
-                px={12}
-                py={6}
-                _hover={{
-                  bg: bg,
-                  color: color,
-                }}
-              >
-                Invest
-              </Button>
+                name="Invest"
+                hoverBg={bg}
+                hoverColor={color}
+              />
             </Box>
             <Box>
               <Switch
