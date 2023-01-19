@@ -76,7 +76,7 @@ function HomeAuroraSection() {
       ></Box>
       <Box
         w="full"
-        h="full"
+        h={["15rem", "15rem", "22rem", "22rem"]}
         backdropFilter="blur(100px)"
         position="relative"
         zIndex={10}
