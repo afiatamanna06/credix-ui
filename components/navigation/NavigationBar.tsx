@@ -67,8 +67,7 @@ function NavigationBar() {
               <DrawerHeader>
                 <NavigationBarDrawer onDrawerClose={onClose} />
               </DrawerHeader>
-              <DrawerFooter>
-              </DrawerFooter>
+              <DrawerFooter></DrawerFooter>
             </DrawerContent>
           </Drawer>
           <Flex gap={8} display={["none", "none", "flex", "flex", "flex"]}>

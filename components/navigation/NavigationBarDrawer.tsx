@@ -20,7 +20,14 @@ function NavigationBarDrawer({ onDrawerClose }: propTypes) {
   const color = useColorModeValue("black", "white");
 
   return (
-    <Flex direction="column" w="full" bg={bg} color={color} gap={6} fontFamily="'IBM Plex Mono', monospace">
+    <Flex
+      direction="column"
+      w="full"
+      bg={bg}
+      color={color}
+      gap={6}
+      fontFamily="'IBM Plex Mono', monospace"
+    >
       <Flex justify="space-between" alignItems="center">
         <Box>
           <Link to="/">

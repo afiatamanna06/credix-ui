@@ -11,7 +11,16 @@ interface propTypes {
   hoverColor?: string;
 }
 
-function CommonButton({ name, onClick, color, bg, hoverBg, borderColor, hoverColor, image }: propTypes) {
+function CommonButton({
+  name,
+  onClick,
+  color,
+  bg,
+  hoverBg,
+  borderColor,
+  hoverColor,
+  image,
+}: propTypes) {
   return (
     <Button
       bg={bg}
