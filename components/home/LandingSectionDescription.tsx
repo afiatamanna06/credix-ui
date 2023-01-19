@@ -17,14 +17,14 @@ function LandingSectionDescription() {
       <Box
         fontSize={["4xl", "4xl", "6xl", "7xl"]}
         fontWeight="bold"
-        mt="-12"
+        mt={["-4", "-4", "-4", "-12"]}
         fontFamily="'Poppins', sans-serif"
       >
         made global
       </Box>
       <Box
         fontSize={["md"]}
-        mt="-6"
+        mt={[0, 0, 0, "-6"]}
       >
         Building the future of global credit markets
       </Box>

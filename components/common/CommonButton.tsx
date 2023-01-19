@@ -30,7 +30,7 @@ function CommonButton({
       borderRadius="4px"
       fontSize="sm"
       fontWeight="semibold"
-      px={12}
+      px={[3, 3, 12, 12]}
       py={6}
       _hover={{
         bg: hoverBg,
