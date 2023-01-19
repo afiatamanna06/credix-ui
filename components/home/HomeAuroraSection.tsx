@@ -14,9 +14,8 @@ function HomeAuroraSection() {
 
   return (
     <Box
-      maxW={["full", "full", "28rem", "28rem"]}
+      w={["full", "full", "28rem", "28rem"]}
       minH={["15rem", "15rem", "22rem", "22rem"]}
-      w="100%"
       position="relative"
       overflow="hidden"
       zIndex={10}

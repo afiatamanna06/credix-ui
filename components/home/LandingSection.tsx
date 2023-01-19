@@ -1,4 +1,4 @@
-import { Flex, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
 import HomeAuroraSection from "./HomeAuroraSection";
 import LandingSectionDescription from "./LandingSectionDescription";
 
@@ -7,8 +7,13 @@ function LandingSection() {
   const color = useColorModeValue("white", "black");
   return (
     <Flex bg={bg} direction={["column", "column", "column", "row", "row"]} color={color} gap={[8]} py={[8, 8, 20, 24]} justify="space-between">
+      <Box display={["block", "block", "block", "none", "none"]}>
+        <HomeAuroraSection />
+      </Box>
       <LandingSectionDescription />
-      <HomeAuroraSection />
+      <Box display={["none", "none", "none", "block"]}>
+        <HomeAuroraSection />
+      </Box>
     </Flex>
   );
 }
