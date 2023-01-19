@@ -22,7 +22,7 @@ function HomeAuroraSection() {
       zIndex={10}
     >
       <Box
-        bg="rgb(0, 0, 255)"
+        bg="rgb(0, 102, 255)"
         h="10rem"
         w="10rem"
         zIndex={1}
