@@ -28,7 +28,7 @@ function CommonButton({
       border="1px"
       borderColor={borderColor}
       borderRadius="4px"
-      fontSize="xs"
+      fontSize="sm"
       fontWeight="semibold"
       px={12}
       py={6}

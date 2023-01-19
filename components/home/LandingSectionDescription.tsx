@@ -8,14 +8,14 @@ function LandingSectionDescription() {
   return (
     <Flex direction="column" bg={bg} color={color} gap={6} fontFamily="'IBM Plex Mono', monospace">
       <Box
-        fontSize={["4xl", "4xl", "6xl", "6xl"]}
+        fontSize={["4xl", "4xl", "6xl", "7xl"]}
         fontWeight="bold"
         fontFamily="'Poppins', sans-serif"
       >
         Credit investing
       </Box>
       <Box
-        fontSize={["4xl", "4xl", "6xl", "6xl"]}
+        fontSize={["4xl", "4xl", "6xl", "7xl"]}
         fontWeight="bold"
         mt="-12"
         fontFamily="'Poppins', sans-serif"
