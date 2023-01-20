@@ -6,7 +6,13 @@ function LandingSectionDescription() {
   const color = useColorModeValue("black", "white");
 
   return (
-    <Flex direction="column" bg={bg} color={color} gap={6} fontFamily="'IBM Plex Mono', monospace">
+    <Flex
+      direction="column"
+      bg={bg}
+      color={color}
+      gap={6}
+      fontFamily="'IBM Plex Mono', monospace"
+    >
       <Box
         fontSize={["4xl", "4xl", "6xl", "7xl"]}
         fontWeight="bold"
@@ -22,10 +28,7 @@ function LandingSectionDescription() {
       >
         made global
       </Box>
-      <Box
-        fontSize={["md"]}
-        mt={[0, 0, 0, "-6"]}
-      >
+      <Box fontSize={["md"]} mt={[0, 0, 0, "-6"]}>
         Building the future of global credit markets
       </Box>
       <Box>
