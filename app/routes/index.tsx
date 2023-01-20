@@ -1,5 +1,6 @@
 import { Button, Flex, useColorModeValue } from "@chakra-ui/react";
-import LandingSection from "components/home/LandingSection";
+import BackedbySection from "components/home/backed-by-section/BackedbySection";
+import LandingSection from "components/home/landing-section/LandingSection";
 
 export default function Index() {
 
@@ -8,8 +9,9 @@ export default function Index() {
   
   return (
     <div>
-      <Flex direction="column" minH="100vh" bg={bg} color={color} px={[6, 6, 8, 28, 44]}>
+      <Flex direction="column" minH="100vh" bg={bg} color={color}>
         <LandingSection />
+        <BackedbySection />
       </Flex>
     </div>
   );
