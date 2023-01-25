@@ -18,7 +18,7 @@ function CoreTeamSection() {
     >
       <Flex
         direction={["column", "column", "column", "row", "row"]}
-        gap={[4, 4, 4, 12, 14]}
+        gap={[8, 8, 8, 12, 14]}
       >
         {coreTeamCardData.map(
           ({ name, image, position, linkedinUrl, twitterUrl }) => (
