@@ -35,16 +35,16 @@ function CoreTeamCard({
           {position}
         </Box>
         <Flex gap={2} pt="4">
-          <Link to={linkedinUrl}>
+          <a href={linkedinUrl} target="_blank" rel="noreferrer">
             <Box>
               <i className="ri-linkedin-box-fill ri-lg"></i>
             </Box>
-          </Link>
-          <Link to={twitterUrl}>
+          </a>
+          <a href={twitterUrl} target="_blank" rel="noreferrer">
             <Box>
               <i className="ri-twitter-fill ri-lg"></i>
             </Box>
-          </Link>
+          </a>
         </Flex>
       </Flex>
     </Flex>

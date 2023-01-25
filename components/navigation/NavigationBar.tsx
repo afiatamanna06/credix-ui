@@ -73,7 +73,11 @@ function NavigationBar() {
           <Flex gap={8} display={["none", "none", "flex", "flex", "flex"]}>
             {navigationLinks.map(({ path, name, target }) => (
               <Box key={name}>
-                <Link to={path}>{name}</Link>
+                {target ? (
+                  <a href={path} target="_blank" rel="noreferrer">{name}</a>
+                ) : (
+                  <Link to={path}>{name}</Link>
+                )}
               </Box>
             ))}
           </Flex>
