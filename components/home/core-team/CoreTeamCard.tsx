@@ -18,13 +18,20 @@ function CoreTeamCard({
 }: propTypes) {
   return (
     <Flex direction={["row", "row", "row", "column", "column"]} gap={4}>
-      <Image src={image} objectFit="cover" w={["7rem", "7rem", "10rem", "10rem"]} h={["9rem", "9rem", "13rem", "13rem"]} alt="" />
+      <Image
+        src={image}
+        objectFit="cover"
+        w={["7rem", "7rem", "10rem", "10rem"]}
+        h={["9rem", "9rem", "13rem", "13rem"]}
+        alt=""
+      />
       <Flex direction="column">
         <Box
           fontSize={["md", "md", "lg", "lg"]}
           fontWeight="bold"
           fontFamily="'Poppins', sans-serif"
         >
+          13rem
           {name}
         </Box>
         <Box
