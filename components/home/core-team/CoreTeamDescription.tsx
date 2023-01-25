@@ -4,7 +4,7 @@ import { coreTeamCardData } from "./CoreTeamCardData";
 
 function CoreTeamDescription() {
   return (
-    <Flex direction="column">
+    <Flex direction="column" gap={14}>
       <Box
         fontSize={["2xl", "2xl", "3xl", "3xl"]}
         fontWeight="bold"
