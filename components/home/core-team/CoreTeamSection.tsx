@@ -1,6 +1,5 @@
 import { Flex, useColorModeValue } from "@chakra-ui/react";
-import CoreTeamCard from "./CoreTeamCard";
-import { coreTeamCardData } from "./CoreTeamCardData";
+import CoreTeamDescription from "./CoreTeamDescription";
 
 function CoreTeamSection() {
   const bg = useColorModeValue("#f6f6f6", "black");
@@ -16,23 +15,7 @@ function CoreTeamSection() {
       py={[8, 8, 20, 24]}
       justify="space-between"
     >
-      <Flex
-        direction={["column", "column", "column", "row", "row"]}
-        gap={[8, 8, 8, 12, 14]}
-      >
-        {coreTeamCardData.map(
-          ({ name, image, position, linkedinUrl, twitterUrl }) => (
-            <CoreTeamCard
-              key={name}
-              name={name}
-              image={image}
-              position={position}
-              linkedinUrl={linkedinUrl}
-              twitterUrl={twitterUrl}
-            />
-          )
-        )}
-      </Flex>
+      <CoreTeamDescription />
     </Flex>
   );
 }
