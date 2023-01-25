@@ -1,4 +1,5 @@
 import { Flex, useColorModeValue } from "@chakra-ui/react";
+import AdvisorsDescription from "./AdvisorsDescription";
 import CoreTeamDescription from "./CoreTeamDescription";
 
 function CoreTeamSection() {
@@ -16,6 +17,7 @@ function CoreTeamSection() {
       justify="space-between"
     >
       <CoreTeamDescription />
+      <AdvisorsDescription />
     </Flex>
   );
 }
