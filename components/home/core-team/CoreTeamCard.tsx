@@ -27,7 +27,13 @@ function CoreTeamCard({
         >
           {name}
         </Box>
-        <Box fontFamily="'IBM Plex Mono', monospace" fontWeight="semibold" fontSize="xs">{position}</Box>
+        <Box
+          fontFamily="'IBM Plex Mono', monospace"
+          fontWeight="semibold"
+          fontSize="xs"
+        >
+          {position}
+        </Box>
         <Flex gap={2} pt="4">
           <Link to={linkedinUrl}>
             <Box>
