@@ -31,7 +31,6 @@ function CoreTeamCard({
           fontWeight="bold"
           fontFamily="'Poppins', sans-serif"
         >
-          13rem
           {name}
         </Box>
         <Box

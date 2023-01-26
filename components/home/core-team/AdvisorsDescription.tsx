@@ -20,7 +20,11 @@ function AdvisorsDescription() {
         {advisorData.map(({ name, position1, position2 }) => (
           <Flex direction="column" key={name} gap={2}>
             <Box>{name}</Box>
-            <Flex direction="column" color="rgba(240, 240, 240, .7)" fontSize="sm">
+            <Flex
+              direction="column"
+              color="rgba(240, 240, 240, .7)"
+              fontSize="sm"
+            >
               <Box>{position1}</Box>
               <Box>{position2}</Box>
             </Flex>
