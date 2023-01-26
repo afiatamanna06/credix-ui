@@ -1,4 +1,5 @@
-import { Box, Flex } from "@chakra-ui/react"
+import { Box, Flex } from "@chakra-ui/react";
+import { advisorData } from "./AdvisorData";
 
 function AdvisorsDescription() {
   return (
@@ -10,8 +11,24 @@ function AdvisorsDescription() {
       >
         Our advisors
       </Box>
+      <Flex
+        direction="column"
+        fontFamily="'IBM Plex Mono', monospace"
+        fontWeight="semibold"
+        gap={2}
+      >
+        {advisorData.map(({ name, position1, position2 }) => (
+          <Flex direction="column" key={name} gap={2}>
+            <Box>{name}</Box>
+            <Flex direction="column" color="rgba(240, 240, 240, .7)" fontSize="sm">
+              <Box>{position1}</Box>
+              <Box>{position2}</Box>
+            </Flex>
+          </Flex>
+        ))}
+      </Flex>
     </Flex>
-  )
+  );
 }
 
-export default AdvisorsDescription
+export default AdvisorsDescription;
