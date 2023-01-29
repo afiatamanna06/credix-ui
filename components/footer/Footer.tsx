@@ -1,4 +1,5 @@
 import { Flex, useColorModeValue } from "@chakra-ui/react";
+import FooterWeb from "./FooterWeb";
 
 function Footer() {
   const bg = useColorModeValue("#f6f6f6", "black");
@@ -14,7 +15,7 @@ function Footer() {
       py={[8, 8, 20, 24]}
       justify="space-between"
     >
-        
+        <FooterWeb />
     </Flex>
   );
 }

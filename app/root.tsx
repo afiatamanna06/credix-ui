@@ -13,6 +13,7 @@ import { ServerStyleContext, ClientStyleContext } from './context'
 import { useContext, useEffect } from "react";
 import NavigationBar from "components/navigation/NavigationBar";
 import theme from "theme/theme";
+import Footer from "components/footer/Footer";
 
 export const links: LinksFunction = () => {
   return [
@@ -100,6 +101,7 @@ export default function App() {
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <NavigationBar />
         <Outlet />
+        <Footer />
       </ChakraProvider>
     </Document>
   );
