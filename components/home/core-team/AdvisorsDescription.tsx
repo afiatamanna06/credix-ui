@@ -3,7 +3,7 @@ import { advisorData } from "./AdvisorData";
 
 function AdvisorsDescription() {
   return (
-    <Flex direction="column" gap={[8, 8, 8, 14]}>
+    <Flex direction="column" gap={[8, 8, 8, 14]} minW={["100%", "100%", "100%", "30rem"]}>
       <Box
         fontSize={["2xl", "2xl", "3xl", "3xl"]}
         fontWeight="bold"
