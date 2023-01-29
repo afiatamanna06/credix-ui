@@ -25,3 +25,16 @@ export const footerLinks = [
     target: true,
   },
 ];
+
+export const bottomFooterLinks = [
+  {
+    path: "/",
+    name: "Support",
+    target: false,
+  },
+  {
+    path: "https://docs.credix.finance/other-links-and-resources/privacy-policy",
+    name: "Privacy Policy",
+    target: true,
+  },
+];
