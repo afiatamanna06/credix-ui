@@ -95,6 +95,15 @@ function FooterWeb() {
             </a>
           </Flex>
         </Flex>
+        <Box _hover={{ fontWeight: "semibold" }}>
+          <a
+            href="https://share-eu1.hsforms.com/1jAAAMPCdTpOl9Sx_K_7HrAfuste"
+            target="_blank"
+            rel="noreferrer"
+          >
+            ✉️ Subscribe to investor updates ✉️
+          </a>
+        </Box>
       </Flex>
     </Flex>
   );
