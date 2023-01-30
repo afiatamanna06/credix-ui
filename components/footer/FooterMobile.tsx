@@ -45,7 +45,7 @@ function FooterMobile() {
             ))}
         </Flex>
       </Flex>
-      <Flex direction="column" p="5" gap={6} minH="20rem" justify="space-between" flex="1">
+      <Flex direction="column" p="5" gap={6} minH="20rem" justify="space-between" fontSize="sm" flex="1">
         <Flex direction="column" gap={4}>
           <Box>Find us on:</Box>
           <Flex gap={2}>
@@ -87,9 +87,9 @@ function FooterMobile() {
             ✉️ Subscribe to investor updates ✉️
           </a>
         </Box>
-        <Flex gap={4}>
+        <Flex gap={4} direction={["column", "column", "row"]}>
           {bottomFooterLinks.map(({ path, name, target }) => (
-            <Box key={name} fontSize="xs">
+            <Box key={name} fontSize="sm">
               {target ? (
                 <a href={path} target="_blank" rel="noreferrer">
                   {name}
