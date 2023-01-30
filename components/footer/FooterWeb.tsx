@@ -21,13 +21,13 @@ function FooterWeb() {
       direction={["column", "column", "column", "row", "row"]}
       border="1px"
       w="full"
-      minH="18rem"
+      minH="19rem"
       fontFamily="'IBM Plex Mono', monospace"
       bg={bg}
       color={color}
       display={["none", "none", "none", "flex"]}
     >
-      <Flex direction="column" justify="space-between" p="5" gap={6} flex="1">
+      <Flex direction="column" justify="space-between" p="5" gap={6} borderRight="1px" flex="1">
         <Box>
           {colorMode === "light" ? (
             <Image src="/logo_black.png" h={["4rem"]} w="3rem" alt="" />
@@ -49,7 +49,7 @@ function FooterWeb() {
           ))}
         </Flex>
       </Flex>
-      <Flex direction="column" p="5" gap={4} flex="1">
+      <Flex direction="column" p="5" gap={4} flex="1" borderRight="1px">
         {footerLinks.map(({ path, name, target }) => (
           <Box key={name} _hover={{ fontWeight: "semibold" }}>
             {target ? (
