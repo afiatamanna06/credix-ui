@@ -1,4 +1,5 @@
 import { Flex, useColorModeValue } from "@chakra-ui/react";
+import FooterMobile from "./FooterMobile";
 import FooterWeb from "./FooterWeb";
 
 function Footer() {
@@ -16,6 +17,7 @@ function Footer() {
       justify="space-between"
     >
         <FooterWeb />
+        <FooterMobile />
     </Flex>
   );
 }

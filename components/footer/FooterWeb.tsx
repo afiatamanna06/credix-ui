@@ -6,8 +6,6 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { Link } from "@remix-run/react";
-import MediumLight from "../../public/medium_light.png";
-import MediumDark from "../../public/medium.png";
 import { bottomFooterLinks, footerLinks } from "./FooterLinks";
 
 function FooterWeb() {
