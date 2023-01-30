@@ -72,7 +72,7 @@ function FooterWeb() {
               rel="noreferrer"
             >
               <Box>
-                <i className="ri-linkedin-box-fill ri-3x"></i>
+                <i className="ri-linkedin-box-fill ri-2x"></i>
               </Box>
             </a>
             <a
@@ -81,7 +81,7 @@ function FooterWeb() {
               rel="noreferrer"
             >
               <Box>
-                <i className="ri-medium-fill ri-3x"></i>
+                <i className="ri-medium-fill ri-2x"></i>
               </Box>
             </a>
             <a
@@ -90,7 +90,7 @@ function FooterWeb() {
               rel="noreferrer"
             >
               <Box>
-                <i className="ri-twitter-fill ri-3x"></i>
+                <i className="ri-twitter-fill ri-2x"></i>
               </Box>
             </a>
           </Flex>
