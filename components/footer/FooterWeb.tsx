@@ -49,9 +49,9 @@ function FooterWeb() {
           ))}
         </Flex>
       </Flex>
-      <Flex direction="column" p="5" gap={6} flex="1">
+      <Flex direction="column" p="5" gap={4} flex="1">
         {footerLinks.map(({ path, name, target }) => (
-          <Box key={name} fontSize="sm">
+          <Box key={name} _hover={{ fontWeight: "semibold" }}>
             {target ? (
               <a href={path} target="_blank" rel="noreferrer">
                 {name}
@@ -72,7 +72,7 @@ function FooterWeb() {
               rel="noreferrer"
             >
               <Box>
-                <i className="ri-linkedin-box-fill ri-2x"></i>
+                <i className="ri-linkedin-box-fill ri-3x"></i>
               </Box>
             </a>
             <a
@@ -81,7 +81,7 @@ function FooterWeb() {
               rel="noreferrer"
             >
               <Box>
-                <i className="ri-medium-fill ri-2x"></i>
+                <i className="ri-medium-fill ri-3x"></i>
               </Box>
             </a>
             <a
@@ -90,7 +90,7 @@ function FooterWeb() {
               rel="noreferrer"
             >
               <Box>
-                <i className="ri-twitter-fill ri-2x"></i>
+                <i className="ri-twitter-fill ri-3x"></i>
               </Box>
             </a>
           </Flex>
