@@ -6,7 +6,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { Link } from "@remix-run/react";
-import { footerLinks } from "./FooterLinks";
+import { bottomFooterLinks, footerLinks } from "./FooterLinks";
 
 function FooterMobile() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -87,6 +87,19 @@ function FooterMobile() {
             ✉️ Subscribe to investor updates ✉️
           </a>
         </Box>
+        <Flex gap={4}>
+          {bottomFooterLinks.map(({ path, name, target }) => (
+            <Box key={name} fontSize="xs">
+              {target ? (
+                <a href={path} target="_blank" rel="noreferrer">
+                  {name}
+                </a>
+              ) : (
+                <Link to={path}>{name}</Link>
+              )}
+            </Box>
+          ))}
+        </Flex>
       </Flex>
     </Flex>
   );
