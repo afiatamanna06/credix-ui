@@ -6,6 +6,8 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { Link } from "@remix-run/react";
+import MediumLight from "../../public/medium_light.png";
+import MediumDark from "../../public/medium.png";
 import { bottomFooterLinks, footerLinks } from "./FooterLinks";
 
 function FooterWeb() {
@@ -59,6 +61,40 @@ function FooterWeb() {
             )}
           </Box>
         ))}
+      </Flex>
+      <Flex direction="column" justify="space-between" p="5" gap={6} flex="1">
+        <Flex direction="column" gap={4}>
+          <Box>Find us on:</Box>
+          <Flex gap={2}>
+            <a
+              href="https://www.linkedin.com/company/credix-finance/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Box>
+                <i className="ri-linkedin-box-fill ri-2x"></i>
+              </Box>
+            </a>
+            <a
+              href="https://link.medium.com/n7tpQNpZyqb"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Box>
+                <i className="ri-medium-fill ri-2x"></i>
+              </Box>
+            </a>
+            <a
+              href="https://twitter.com/Credix_finance?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Box>
+                <i className="ri-twitter-fill ri-2x"></i>
+              </Box>
+            </a>
+          </Flex>
+        </Flex>
       </Flex>
     </Flex>
   );
