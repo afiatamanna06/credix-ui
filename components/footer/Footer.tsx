@@ -13,7 +13,7 @@ function Footer() {
       direction={["column", "column", "column", "row", "row"]}
       color={color}
       gap={[28, 28, 8, 8]}
-      py={[8, 8, 20, 24]}
+      py={[8, 8, 8, 8]}
       justify="space-between"
     >
         <FooterWeb />

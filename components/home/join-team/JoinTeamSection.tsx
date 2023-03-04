@@ -11,8 +11,9 @@ function JoinTeamSection() {
       direction={["column", "column", "column", "row", "row"]}
       color={color}
       border="1px"
-      gap={[28, 28, 8, 8]}
-      mb="10"
+      gap={[8]}
+      mb="16"
+      mt={[14, 14, 0, 0]}
       p="10"
       alignItems="center"
       fontFamily="'IBM Plex Mono', monospace"
@@ -26,7 +27,7 @@ function JoinTeamSection() {
         >
           Join the team
         </Box>
-        <Box maxWidth={["100%", "100%", "100%", "40rem"]}>
+        <Box maxWidth={["100%", "100%", "100%", "40rem"]} fontSize={["sm", "sm", "md", "md"]}>
           Become part of the team and help us build the debt capital markets
           infrastructure of the future.
         </Box>
@@ -38,6 +39,7 @@ function JoinTeamSection() {
         name="See openings"
         hoverBg={bg}
         hoverColor={color}
+        width={["full", "full", "full", "min-content"]}
       />
     </Flex>
   );

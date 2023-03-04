@@ -9,6 +9,7 @@ interface propTypes {
   image?: string;
   hoverBg?: string;
   hoverColor?: string;
+  width?: string[];
 }
 
 function CommonButton({
@@ -20,6 +21,7 @@ function CommonButton({
   borderColor,
   hoverColor,
   image,
+  width,
 }: propTypes) {
   return (
     <Button
@@ -29,6 +31,7 @@ function CommonButton({
       borderColor={borderColor}
       borderRadius="4px"
       fontSize="sm"
+      width={width}
       fontWeight="semibold"
       px={[3, 3, 12, 12]}
       py={6}

@@ -10,8 +10,9 @@ function BecomePartSection() {
       px={[6, 6, 8, 28, 44]}
       direction={["column"]}
       color={color}
-      gap={[28, 28, 8, 8]}
+      gap={[8]}
       py="12"
+      width="full"
       alignItems={["center", "center", "center", "start"]}
       fontFamily="'IBM Plex Mono', monospace"
     >
@@ -24,7 +25,7 @@ function BecomePartSection() {
       >
         Become part of the future of private credit markets
       </Box>
-      <Flex gap={6} mt={6} direction={["column", "column", "column", "row", "row"]}>
+      <Flex gap={[4, 4, 4, 6]} mt={6} width="full" direction={["column", "column", "column", "row", "row"]}>
         <CommonButton
           bg={bg}
           color={color}
@@ -32,6 +33,7 @@ function BecomePartSection() {
           name="Onboard as an investor"
           hoverBg={color}
           hoverColor={bg}
+          width={["full", "full", "full", "min-content"]}
         />
         <CommonButton
           bg={color}
@@ -40,6 +42,7 @@ function BecomePartSection() {
           name="Register as a borrower"
           hoverBg={bg}
           hoverColor={color}
+          width={["full", "full", "full", "min-content"]}
         />
       </Flex>
     </Flex>
