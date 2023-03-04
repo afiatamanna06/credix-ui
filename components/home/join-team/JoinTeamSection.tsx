@@ -12,6 +12,7 @@ function JoinTeamSection() {
       color={color}
       border="1px"
       gap={[28, 28, 8, 8]}
+      mb="10"
       p="10"
       alignItems="center"
       fontFamily="'IBM Plex Mono', monospace"
