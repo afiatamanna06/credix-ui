@@ -17,7 +17,6 @@ function CoreTeamSection() {
       justify="space-between"
     >
       <CoreTeamDescription />
-      <AdvisorsDescription />
     </Flex>
   );
 }

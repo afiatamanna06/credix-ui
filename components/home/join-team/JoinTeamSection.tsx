@@ -7,11 +7,12 @@ function JoinTeamSection() {
   return (
     <Flex
       bg={bg}
-      px={[6, 6, 8, 28, 44]}
+      mx={[6, 6, 8, 28, 44]}
       direction={["column", "column", "column", "row", "row"]}
       color={color}
+      border="1px"
       gap={[28, 28, 8, 8]}
-      py={[8, 8, 20, 24]}
+      p="10"
       alignItems="center"
       fontFamily="'IBM Plex Mono', monospace"
       justify="space-between"
