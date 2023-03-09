@@ -13,7 +13,7 @@ import {
   DrawerFooter,
   useDisclosure,
 } from "@chakra-ui/react";
-import { Link } from "@remix-run/react";
+import { Link, useLocation } from "@remix-run/react";
 import CommonButton from "components/common/CommonButton";
 import NavigationBarDrawer from "./NavigationBarDrawer";
 import { navigationLinks } from "./NavigationBarLinks";
@@ -21,6 +21,7 @@ import NavigationMarquee from "./NavigationMarquee";
 
 function NavigationBar() {
   const { colorMode, toggleColorMode } = useColorMode();
+  const matches = useLocation();
 
   const bg = useColorModeValue("#f6f6f6", "black");
   const color = useColorModeValue("black", "white");
@@ -74,9 +75,25 @@ function NavigationBar() {
             {navigationLinks.map(({ path, name, target }) => (
               <Box key={name}>
                 {target ? (
-                  <a href={path} target="_blank" rel="noreferrer">{name}</a>
+                  <a href={path} target="_blank" rel="noreferrer">
+                    <Flex direction="column">
+                      {name}
+                      <Box height="1" width="2rem" bg={bg}></Box>
+                      {matches.pathname === path && (
+                        <Box height="1" width="2rem" bg={color}></Box>
+                      )}
+                    </Flex>
+                  </a>
                 ) : (
-                  <Link to={path}>{name}</Link>
+                  <Link to={path}>
+                    <Flex direction="column">
+                      {name}
+                      <Box height="1" width="5.5rem" bg={bg}></Box>
+                      {matches.pathname === path && (
+                        <Box height="1" width="5.5rem" bg={color}></Box>
+                      )}
+                    </Flex>
+                  </Link>
                 )}
               </Box>
             ))}
