@@ -22,51 +22,37 @@ function AuroraSection() {
     >
       <Box
         bg="#ff9999"
-        h="10rem"
-        w="10rem"
+        h="40rem"
+        w="40rem"
         zIndex={1}
         rounded="full"
         position="absolute"
         animation={animation}
-        top="-30%"
-        left="-20%"
+        top="-50%"
+        left="-10%"
       ></Box>
       <Box
         bg="rgb(255, 0, 0)"
-        h="20rem"
-        w="20rem"
-        zIndex={0}
+        h="15rem"
+        w="15rem"
+        zIndex={1}
         rounded="full"
         position="absolute"
         animation={animation}
         sx={{
             animationDelay: "2s",
         }}
-        top="30%"
+        top="50%"
         left="-20%"
       ></Box>
       <Box
-        bg="#ff9999"
-        h="20rem"
-        w="20rem"
-        zIndex={0}
-        rounded="full"
-        animation={animation}
-        sx={{
-            animationDelay: "3s",
-        }}
-        position="absolute"
-        top="-20%"
-        left="30%"
-      ></Box>
-      <Box
         bg="rgb(255, 235, 0)"
-        h="15rem"
-        w="15rem"
+        h="17rem"
+        w="17rem"
         zIndex={2}
         animation={animation}
         sx={{
-            animationDelay: "4s",
+            animationDelay: "2s",
         }}
         rounded="full"
         position="absolute"

@@ -14,7 +14,7 @@ function LandingSection() {
       minH="90vh"
       gap={[8]}
       py={[8, 8, 20, 24]}
-      justify="space-between"
+      justify={["flex-start", "flex-start", "flex-start", "space-between"]}
     >
       <Box display={["block", "block", "block", "none", "none"]}>
         <AuroraSection />

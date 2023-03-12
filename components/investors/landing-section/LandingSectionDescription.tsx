@@ -39,6 +39,7 @@ function LandingSectionDescription() {
           name="Onboard as an investor"
           hoverBg={bg}
           hoverColor={color}
+          width={["full", "full", "full", "min-content"]}
         />
       </Box>
     </Flex>

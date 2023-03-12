@@ -39,6 +39,7 @@ function LandingSectionDescription() {
           name="Register as a borrower"
           hoverBg={bg}
           hoverColor={color}
+          width={["full", "full", "full", "min-content"]}
         />
       </Box>
     </Flex>
