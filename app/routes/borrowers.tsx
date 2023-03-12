@@ -1,4 +1,5 @@
 import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
+import AboutSection from "components/borrowers/about/AboutSection";
 import LandingSection from "components/borrowers/landing-section/LandingSection";
 
 const Borrowers = () => {
@@ -7,6 +8,7 @@ const Borrowers = () => {
   return (
     <Flex direction="column" minH="100vh" bg={bg} color={color}>
       <LandingSection />
+      <AboutSection />
     </Flex>
   );
 };

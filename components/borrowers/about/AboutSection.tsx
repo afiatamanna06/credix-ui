@@ -1,6 +1,7 @@
 import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
 import CommonButton from "components/common/CommonButton";
 import CommonCard from "components/common/CommonCard";
+import { aboutData } from "./AboutSectionData";
 
 const AboutSection = () => {
   const bg = useColorModeValue("white", "#0b0b0b");
@@ -22,15 +23,17 @@ const AboutSection = () => {
         gap={[8]}
         w="full"
       >
-        {/*{aboutData.map(({ title, data }) => (
+        {aboutData.map(({ title, data }) => (
           <CommonCard
             key={title}
             title={title}
             data={data}
-            border="#0046fa"
-            borderHeight=".50rem"
+            border="#f8bb00"
+            borderHeight=".25rem"
+            borderWidth={"5rem"}
+            width="25rem"
           />
-        ))}*/}
+        ))}
       </Flex>
       <Box mt="12">
         <CommonButton
