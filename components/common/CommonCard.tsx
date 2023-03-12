@@ -9,12 +9,12 @@ interface propTypes {
 
 const CommonCard = ({ title, data, border, borderHeight = 1 }: propTypes) => {
   return (
-    <Flex direction="column" fontFamily="'IBM Plex Mono', monospace" gap={[8]}>
+    <Flex direction="column" flex="1" fontFamily="'IBM Plex Mono', monospace" gap={[4]}>
       <Box fontSize="xl" fontWeight="semibold">
         {title}
       </Box>
-      <Box w="5rem" h={borderHeight} backgroundColor={border}></Box>
-      <Box fontSize={["md"]} mt={[0, 0, 0, 0]} maxW="18rem">
+      <Box w="4.5rem" h={borderHeight} backgroundColor={border}></Box>
+      <Box fontSize={["md"]} mt={[2]} maxW="20rem">
         {data}
       </Box>
     </Flex>

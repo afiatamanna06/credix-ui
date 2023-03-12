@@ -1,4 +1,5 @@
 import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
+import AboutSection from "components/investors/about/AboutSection";
 import LandingSection from "components/investors/landing-section/LandingSection";
 
 const Investors = () => {
@@ -7,6 +8,7 @@ const Investors = () => {
   return (
     <Flex direction="column" minH="100vh" bg={bg} color={color}>
       <LandingSection />
+      <AboutSection />
     </Flex>
   );
 };
