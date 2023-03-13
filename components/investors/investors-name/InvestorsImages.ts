@@ -21,3 +21,27 @@ export const investorsData = [
     image: "/mudrex.webp",
   },
 ];
+
+export const investorsLightData = [
+  {
+    image: "/parafi_light.webp",
+  },
+  {
+    image: "/cumberland_light.webp",
+  },
+  {
+    image: "/mgnr_light.webp",
+  },
+  {
+    image: "/rockaway_light.webp",
+  },
+  {
+    image: "/arca_light.webp",
+  },
+  {
+    image: "/fuse_light.webp",
+  },
+  {
+    image: "/mudrex_light.webp",
+  },
+];

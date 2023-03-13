@@ -1,7 +1,14 @@
-import { Box, Flex, useColorModeValue, Image } from "@chakra-ui/react";
-import { investorsData } from "./InvestorsImages";
+import {
+  Box,
+  Flex,
+  useColorModeValue,
+  Image,
+  useColorMode,
+} from "@chakra-ui/react";
+import { investorsData, investorsLightData } from "./InvestorsImages";
 
 const InvestorsSection = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
   const bg = useColorModeValue("#f6f6f6", "black");
   const color = useColorModeValue("black", "white");
 
@@ -12,7 +19,7 @@ const InvestorsSection = () => {
       direction={["column"]}
       color={color}
       w="full"
-      gap={[14, 14, 8, 8]}
+      gap={[14, 14]}
       py={[16, 16, 20, 24]}
       justify="space-between"
     >
@@ -30,18 +37,31 @@ const InvestorsSection = () => {
         gap={[14, 14, 14, 20]}
         direction={["column", "column", "column", "row"]}
       >
-        {investorsData.map(({ image }: { image: string }) => (
-          <Image
-            flex="1"
-            key={image}
-            src={image}
-            w="100%"
-            h="100%"
-            maxW={["10rem", "10rem", "10rem", "15rem"]}
-            maxH={["6rem", "6rem", "6rem", "4rem"]}
-            alt=""
-          />
-        ))}
+        {colorMode === "light"
+          ? investorsLightData.map(({ image }: { image: string }) => (
+              <Image
+                flex="1"
+                key={image}
+                src={image}
+                w="100%"
+                h="100%"
+                maxW={["10rem", "10rem", "10rem", "15rem"]}
+                maxH={["6rem", "6rem", "6rem", "4rem"]}
+                alt=""
+              />
+            ))
+          : investorsData.map(({ image }: { image: string }) => (
+              <Image
+                flex="1"
+                key={image}
+                src={image}
+                w="100%"
+                h="100%"
+                maxW={["10rem", "10rem", "10rem", "15rem"]}
+                maxH={["6rem", "6rem", "6rem", "4rem"]}
+                alt=""
+              />
+            ))}
       </Flex>
     </Flex>
   );
