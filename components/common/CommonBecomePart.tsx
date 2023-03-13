@@ -18,17 +18,17 @@ const CommonBecomePart = ({ title, buttonText, border, borderHeight = 1, borderW
       px={[6, 6, 8, 28, 44]}
       direction={["column", "column", "column", "row", "row"]}
       color={color}
-      gap={[8]}
-      py="12"
+      gap={[6]}
+      py={["12", "12", "28", "28"]}
       width="full"
       justify={["start", "start", "start", "space-between"]}
-      alignItems={["start"]}
+      alignItems={["start", "start", "start", "center"]}
       fontFamily="'IBM Plex Mono', monospace"
     >
-      <Flex direction={"column"}>
+      <Flex direction={"column"} gap={4}>
         <Box w={borderWidth} h={borderHeight} backgroundColor={border}></Box>
         <Box
-          fontSize={["2xl", "2xl", "3xl", "3xl"]}
+          fontSize={["3xl", "3xl", "3xl", "4xl"]}
           fontWeight="bold"
           fontFamily="'Poppins', sans-serif"
         >
@@ -42,7 +42,7 @@ const CommonBecomePart = ({ title, buttonText, border, borderHeight = 1, borderW
         name={buttonText}
         hoverBg={bg}
         hoverColor={color}
-        width={["full", "full", "full", "min-content"]}
+        width={["full", "full", "full", "23rem"]}
       />
     </Flex>
   );
