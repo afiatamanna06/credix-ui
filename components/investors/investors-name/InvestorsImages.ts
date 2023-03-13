@@ -1,4 +1,4 @@
-export const coreTeamCardData = [
+export const investorsData = [
   {
     image: "/parafi.webp",
   },

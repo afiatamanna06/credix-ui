@@ -1,4 +1,5 @@
-import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, useColorModeValue, Image } from "@chakra-ui/react";
+import { investorsData } from "./InvestorsImages";
 
 const InvestorsSection = () => {
   const bg = useColorModeValue("#f6f6f6", "black");
@@ -10,8 +11,9 @@ const InvestorsSection = () => {
       px={[6, 6, 8, 28, 44]}
       direction={["column"]}
       color={color}
-      gap={[28, 28, 8, 8]}
-      py={[8, 8, 20, 24]}
+      w="full"
+      gap={[14, 14, 8, 8]}
+      py={[16, 16, 20, 24]}
       justify="space-between"
     >
       <Box
@@ -21,8 +23,25 @@ const InvestorsSection = () => {
       >
         Investors
       </Box>
-      <Flex wrap="wrap" direction={["column", "column", "column", "row"]}>
-
+      <Flex
+        wrap="wrap"
+        w="full"
+        alignItems={["center", "center", "center", "start"]}
+        gap={[14, 14, 14, 20]}
+        direction={["column", "column", "column", "row"]}
+      >
+        {investorsData.map(({ image }: { image: string }) => (
+          <Image
+            flex="1"
+            key={image}
+            src={image}
+            w="100%"
+            h="100%"
+            maxW={["10rem", "10rem", "10rem", "15rem"]}
+            maxH={["6rem", "6rem", "6rem", "4rem"]}
+            alt=""
+          />
+        ))}
       </Flex>
     </Flex>
   );

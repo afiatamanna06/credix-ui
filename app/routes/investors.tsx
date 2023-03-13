@@ -1,6 +1,7 @@
 import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
 import CommonBecomePart from "components/common/CommonBecomePart";
 import AboutSection from "components/investors/about/AboutSection";
+import InvestorsSection from "components/investors/investors-name/InvestorsSection";
 import LandingSection from "components/investors/landing-section/LandingSection";
 
 const Investors = () => {
@@ -10,6 +11,7 @@ const Investors = () => {
     <Flex direction="column" minH="100vh" bg={bg} color={color}>
       <LandingSection />
       <AboutSection />
+      <InvestorsSection />
       <CommonBecomePart
         title="Invest in the future of credit markets"
         buttonText="Onboard as an investor"
