@@ -27,11 +27,12 @@ const AboutSectionCard = ({
         fontWeight="450"
         fontFamily="'Poppins', sans-serif"
         lineHeight={1}
+        mb="1"
         maxWidth={["100%", "100%", "100%", "30rem"]}
       >
         {heading}
       </Box>
-      <Box w="100rem" h="1" backgroundColor={background}></Box>
+      <Box w="40rem" mb="2" h="1" backgroundColor={color}></Box>
       {subHeading && (
         <Box
           maxWidth={["100%", "100%", "100%", "40rem"]}
@@ -42,7 +43,7 @@ const AboutSectionCard = ({
         </Box>
       )}
       <Box
-        maxWidth={["100%", "100%", "100%", "40rem"]}
+        maxWidth={["100%", "100%", "100%", "42rem"]}
         fontSize={["sm", "sm", "md", "md"]}
       >
         {description}
@@ -60,7 +61,7 @@ const AboutSectionCard = ({
         </a>
       )}
       {buttonText && (
-        <Box>
+        <Box mt="14">
           <CommonButton
             bg={color}
             color={background}

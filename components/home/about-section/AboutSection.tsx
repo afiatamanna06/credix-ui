@@ -9,7 +9,7 @@ const AboutSection = () => {
       bg={bg}
       color={color}
     >
-        <AboutWebSection />
+        <AboutWebSection bg={bg} color={color} />
     </Flex>
   );
 };
