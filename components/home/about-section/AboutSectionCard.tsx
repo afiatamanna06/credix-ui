@@ -1,4 +1,5 @@
 import { Box, Flex } from "@chakra-ui/react";
+import CommonButton from "components/common/CommonButton";
 
 interface propTypes {
   heading: string;
@@ -6,6 +7,8 @@ interface propTypes {
   description: string;
   link?: string;
   buttonText?: string;
+  background?: string;
+  color?: string;
 }
 
 const AboutSectionCard = ({
@@ -14,6 +17,8 @@ const AboutSectionCard = ({
   description,
   link,
   buttonText,
+  color,
+  background,
 }: propTypes) => {
   return (
     <Flex direction="column" gap={2}>
@@ -26,6 +31,47 @@ const AboutSectionCard = ({
       >
         {heading}
       </Box>
+      <Box w="100rem" h="1" backgroundColor={background}></Box>
+      {subHeading && (
+        <Box
+          maxWidth={["100%", "100%", "100%", "40rem"]}
+          fontSize={["sm", "sm", "md", "md"]}
+          fontWeight="semibold"
+        >
+          {subHeading}
+        </Box>
+      )}
+      <Box
+        maxWidth={["100%", "100%", "100%", "40rem"]}
+        fontSize={["sm", "sm", "md", "md"]}
+      >
+        {description}
+      </Box>
+      {link && (
+        <a
+          href={"https://docs.credix.finance/"}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Flex
+            direction="column"
+            textDecoration="underline"
+          >{`Read our documentation ->`}</Flex>
+        </a>
+      )}
+      {buttonText && (
+        <Box>
+          <CommonButton
+            bg={color}
+            color={background}
+            borderColor={color}
+            name={buttonText}
+            hoverBg={background}
+            hoverColor={color}
+            width={["full", "full", "full", "17rem"]}
+          />
+        </Box>
+      )}
     </Flex>
   );
 };

@@ -8,7 +8,7 @@ import {
 import { investorsData, investorsLightData } from "./InvestorsImages";
 
 const InvestorsSection = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const bg = useColorModeValue("#f6f6f6", "black");
   const color = useColorModeValue("black", "white");
 
