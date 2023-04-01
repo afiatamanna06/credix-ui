@@ -1,4 +1,5 @@
 import { Button, Flex, useColorModeValue } from "@chakra-ui/react";
+import AboutSection from "components/home/about-section/AboutSection";
 import BackedbySection from "components/home/backed-by-section/BackedbySection";
 import BecomePartSection from "components/home/become-part/BecomePartSection";
 import CoreTeamSection from "components/home/core-team/CoreTeamSection";
@@ -14,6 +15,7 @@ export default function Index() {
     <div>
       <Flex direction="column" minH="100vh" bg={bg} color={color}>
         <LandingSection />
+        <AboutSection />
         <BackedbySection />
         <CoreTeamSection />
         <JoinTeamSection />
