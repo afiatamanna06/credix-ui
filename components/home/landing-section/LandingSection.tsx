@@ -12,9 +12,9 @@ function LandingSection() {
       direction={["column", "column", "column", "row", "row"]}
       color={color}
       gap={[8]}
-      minH="100vh"
+      minH={["80vh", "80vh", "80vh", "100vh"]}
       py={[8, 8, 20, 24]}
-      justify="space-between"
+      justify={["start", "start", "start", "space-between"]}
     >
       <Box display={["block", "block", "block", "none", "none"]}>
         <HomeAuroraSection />

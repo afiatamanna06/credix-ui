@@ -1,5 +1,5 @@
 import { Flex } from "@chakra-ui/react";
-import React from "react";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 import AboutSectionCard from "./AboutSectionCard";
 import { aboutSectionData } from "./AboutSectionData";
 
@@ -9,6 +9,8 @@ interface propTypes {
 }
 
 const AboutWebSection = ({ bg, color }: propTypes) => {
+  const { scrollY } = useViewportScroll();
+  const y1 = useTransform(scrollY, [0, 100], [0, -400]);
   return (
     <Flex
       display={["none", "none", "none", "flex", "flex"]}
@@ -23,16 +25,21 @@ const AboutWebSection = ({ bg, color }: propTypes) => {
       <Flex direction="column" gap={40}>
         {aboutSectionData.map(
           ({ heading, subHeading, description, link, buttonText }) => (
-            <AboutSectionCard
+            <motion.div
               key={heading}
-              heading={heading}
-              description={description}
-              subHeading={subHeading}
-              link={link}
-              buttonText={buttonText}
-              background={bg}
-              color={color}
-            />
+              transition={{ delay: 2, ease: "easeOut" }}
+              style={{ y: y1, x: 0 }}
+            >
+              <AboutSectionCard
+                heading={heading}
+                description={description}
+                subHeading={subHeading}
+                link={link}
+                buttonText={buttonText}
+                background={bg}
+                color={color}
+              />
+            </motion.div>
           )
         )}
       </Flex>

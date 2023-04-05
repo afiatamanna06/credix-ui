@@ -1,4 +1,5 @@
 import { Flex, useColorModeValue } from "@chakra-ui/react";
+import AboutMobileSection from "./AboutMobileSection";
 import AboutWebSection from "./AboutWebSection";
 
 const AboutSection = () => {
@@ -10,6 +11,7 @@ const AboutSection = () => {
       color={color}
     >
         <AboutWebSection bg={bg} color={color} />
+        <AboutMobileSection bg={bg} color={color} />
     </Flex>
   );
 };
