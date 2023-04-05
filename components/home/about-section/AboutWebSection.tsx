@@ -13,7 +13,8 @@ const AboutWebSection = ({ bg, color }: propTypes) => {
     <Flex
       display={["none", "none", "none", "flex", "flex"]}
       mx={[6, 6, 8, 28, 44]}
-      my={[48]}
+      mt={["5rem"]}
+      mb={[8]}
       direction={["row"]}
       justify="space-between"
       alignItems="center"

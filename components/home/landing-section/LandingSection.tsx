@@ -12,6 +12,7 @@ function LandingSection() {
       direction={["column", "column", "column", "row", "row"]}
       color={color}
       gap={[8]}
+      minH="100vh"
       py={[8, 8, 20, 24]}
       justify="space-between"
     >
