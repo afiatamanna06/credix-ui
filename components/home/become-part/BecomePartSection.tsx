@@ -25,25 +25,34 @@ function BecomePartSection() {
       >
         Become part of the future of private credit markets
       </Box>
-      <Flex gap={[4, 4, 4, 6]} mt={6} width="full" direction={["column", "column", "column", "row", "row"]}>
-        <CommonButton
-          bg={bg}
-          color={color}
-          borderColor={color}
-          name="Onboard as an investor"
-          hoverBg={color}
-          hoverColor={bg}
-          width={["full", "full", "full", "min-content"]}
-        />
-        <CommonButton
-          bg={color}
-          color={bg}
-          borderColor={color}
-          name="Register as a borrower"
-          hoverBg={bg}
-          hoverColor={color}
-          width={["full", "full", "full", "min-content"]}
-        />
+      <Flex
+        gap={[4, 4, 4, 6]}
+        mt={6}
+        width="full"
+        direction={["column", "column", "column", "row", "row"]}
+      >
+        <a href="https://credix-finance.vercel.app/" target="_blank" rel="noreferrer">
+          <CommonButton
+            bg={bg}
+            color={color}
+            borderColor={color}
+            name="Onboard as an investor"
+            hoverBg={color}
+            hoverColor={bg}
+            width={["full", "full", "full", "min-content"]}
+          />
+        </a>
+        <a href="https://share-eu1.hsforms.com/13OiNrrgQT0Gv2AF1cV52Uwfuste" target="_blank" rel="noreferrer">
+          <CommonButton
+            bg={color}
+            color={bg}
+            borderColor={color}
+            name="Register as a borrower"
+            hoverBg={bg}
+            hoverColor={color}
+            width={["full", "full", "full", "min-content"]}
+          />
+        </a>
       </Flex>
     </Flex>
   );

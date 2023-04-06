@@ -20,7 +20,7 @@ const AboutMobileSection = ({ bg, color }: propTypes) => {
     >
       <Flex direction="column" gap={16}>
         {aboutSectionData.map(
-          ({ heading, subHeading, description, link, buttonText }) => (
+          ({ heading, subHeading, description, link, buttonText, buttonLink }) => (
             <AboutSectionCard
               key={heading}
               heading={heading}
@@ -30,6 +30,7 @@ const AboutMobileSection = ({ bg, color }: propTypes) => {
               buttonText={buttonText}
               background={bg}
               color={color}
+              buttonLink={buttonLink}
             />
           )
         )}

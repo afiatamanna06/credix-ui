@@ -10,6 +10,7 @@ interface propTypes {
   buttonText?: string;
   background?: string;
   color?: string;
+  buttonLink?: string;
 }
 
 const AboutSectionCard = ({
@@ -20,6 +21,7 @@ const AboutSectionCard = ({
   buttonText,
   color,
   background,
+  buttonLink,
 }: propTypes) => {
   return (
     <Flex direction="column" gap={2}>
@@ -33,7 +35,12 @@ const AboutSectionCard = ({
       >
         {heading}
       </Box>
-      <Box w={["100%", "100%", "100%", "40rem"]} mb="2" h="1" backgroundColor={color}></Box>
+      <Box
+        w={["100%", "100%", "100%", "40rem"]}
+        mb="2"
+        h="1"
+        backgroundColor={color}
+      ></Box>
       {subHeading && (
         <Box
           maxWidth={["100%", "100%", "100%", "40rem"]}
@@ -63,15 +70,21 @@ const AboutSectionCard = ({
       )}
       {buttonText && (
         <Box mt={["6", "6", "6", "14"]}>
-          <CommonButton
-            bg={color}
-            color={background}
-            borderColor={color}
-            name={buttonText}
-            hoverBg={background}
-            hoverColor={color}
-            width={["full", "full", "full", "17rem"]}
-          />
+          <a
+            href={buttonLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <CommonButton
+              bg={color}
+              color={background}
+              borderColor={color}
+              name={buttonText}
+              hoverBg={background}
+              hoverColor={color}
+              width={["full", "full", "full", "17rem"]}
+            />
+          </a>
         </Box>
       )}
     </Flex>

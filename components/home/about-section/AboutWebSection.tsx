@@ -26,7 +26,7 @@ const AboutWebSection = ({ bg, color }: propTypes) => {
     >
       <Flex direction="column" gap={40}>
         {aboutSectionData.map(
-          ({ heading, subHeading, description, link, buttonText }) => (
+          ({ heading, subHeading, description, link, buttonText, buttonLink }) => (
             <motion.div
               key={heading}
               transition={{ delay: 2, ease: "easeOut" }}
@@ -40,6 +40,7 @@ const AboutWebSection = ({ bg, color }: propTypes) => {
                 buttonText={buttonText}
                 background={bg}
                 color={color}
+                buttonLink={buttonLink}
               />
             </motion.div>
           )

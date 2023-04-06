@@ -32,15 +32,21 @@ function LandingSectionDescription() {
         Building the future of global credit markets
       </Box>
       <Box>
-        <CommonButton
-          bg={color}
-          color={bg}
-          borderColor={color}
-          name="Investment opportunities"
-          hoverBg={bg}
-          hoverColor={color}
-          width={["full", "full", "full", "min-content"]}
-        />
+        <a
+          href="https://credix-finance.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <CommonButton
+            bg={color}
+            color={bg}
+            borderColor={color}
+            name="Investment opportunities"
+            hoverBg={bg}
+            hoverColor={color}
+            width={["full", "full", "full", "min-content"]}
+          />
+        </a>
       </Box>
     </Flex>
   );

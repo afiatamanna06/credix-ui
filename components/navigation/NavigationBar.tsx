@@ -104,14 +104,20 @@ function NavigationBar() {
             gap={8}
           >
             <Box>
-              <CommonButton
-                bg={color}
-                color={bg}
-                borderColor={color}
-                name="Invest"
-                hoverBg={bg}
-                hoverColor={color}
-              />
+              <a
+                href="https://credix-finance.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <CommonButton
+                  bg={color}
+                  color={bg}
+                  borderColor={color}
+                  name="Invest"
+                  hoverBg={bg}
+                  hoverColor={color}
+                />
+              </a>
             </Box>
             <Box>
               <Switch

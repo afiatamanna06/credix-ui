@@ -27,20 +27,29 @@ function JoinTeamSection() {
         >
           Join the team
         </Box>
-        <Box maxWidth={["100%", "100%", "100%", "40rem"]} fontSize={["sm", "sm", "md", "md"]}>
+        <Box
+          maxWidth={["100%", "100%", "100%", "40rem"]}
+          fontSize={["sm", "sm", "md", "md"]}
+        >
           Become part of the team and help us build the debt capital markets
           infrastructure of the future.
         </Box>
       </Flex>
-      <CommonButton
-        bg={color}
-        color={bg}
-        borderColor={color}
-        name="See openings"
-        hoverBg={bg}
-        hoverColor={color}
-        width={["full", "full", "full", "min-content"]}
-      />
+      <a
+        href="https://wellfound.com/company/credix"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <CommonButton
+          bg={color}
+          color={bg}
+          borderColor={color}
+          name="See openings"
+          hoverBg={bg}
+          hoverColor={color}
+          width={["full", "full", "full", "min-content"]}
+        />
+      </a>
     </Flex>
   );
 }
