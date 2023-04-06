@@ -8,6 +8,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import { withEmotionCache } from '@emotion/react'
+import styles from "./global.css"
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
 import { ServerStyleContext, ClientStyleContext } from './context'
 import { useContext, useEffect } from "react";
@@ -17,6 +18,10 @@ import Footer from "components/footer/Footer";
 
 export const links: LinksFunction = () => {
   return [
+    {
+      rel: "stylesheet",
+      href: styles,
+    },
     {
       rel: "icon",
       href: "/logo.png",
