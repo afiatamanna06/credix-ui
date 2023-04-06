@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
+import AboutImagesSection from "./AboutImagesSection";
 import AboutSectionCard from "./AboutSectionCard";
 import { aboutSectionData } from "./AboutSectionData";
 
@@ -17,9 +18,10 @@ const AboutWebSection = ({ bg, color }: propTypes) => {
       mx={[6, 6, 8, 28, 44]}
       mt={["5rem"]}
       mb={[8]}
+      width="full"
       direction={["row"]}
       justify="space-between"
-      alignItems="center"
+      alignItems="start"
       fontFamily="'IBM Plex Mono', monospace"
     >
       <Flex direction="column" gap={40}>
@@ -43,6 +45,7 @@ const AboutWebSection = ({ bg, color }: propTypes) => {
           )
         )}
       </Flex>
+      <AboutImagesSection />
     </Flex>
   );
 };
