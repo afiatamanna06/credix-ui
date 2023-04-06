@@ -8,7 +8,7 @@ const Investors = () => {
   const bg = useColorModeValue("#f6f6f6", "black");
   const color = useColorModeValue("white", "black");
   return (
-    <Flex direction="column" minH="100vh" bg={bg} color={color}>
+    <Flex direction="column" minH="100vh" overflow="hidden" bg={bg} color={color}>
       <LandingSection />
       <AboutSection />
       <InvestorsSection />
