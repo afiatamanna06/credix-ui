@@ -5,7 +5,7 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: white;
+    background: linear-gradient(45deg, black, #1b1a1b, #242224, #0047fa60);
   }
   
   /* Handle */
