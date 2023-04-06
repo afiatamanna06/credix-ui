@@ -7,9 +7,17 @@ interface propTypes {
   border: string;
   borderHeight?: string | number;
   borderWidth?: string | number;
+  buttonLink?: string;
 }
 
-const CommonBecomePart = ({ title, buttonText, border, borderHeight = 1, borderWidth = "4.5rem" }: propTypes) => {
+const CommonBecomePart = ({
+  title,
+  buttonText,
+  border,
+  borderHeight = 1,
+  borderWidth = "4.5rem",
+  buttonLink,
+}: propTypes) => {
   const bg = useColorModeValue("black", "#f6f6f6");
   const color = useColorModeValue("white", "black");
   return (
@@ -35,15 +43,17 @@ const CommonBecomePart = ({ title, buttonText, border, borderHeight = 1, borderW
           {title}
         </Box>
       </Flex>
-      <CommonButton
-        bg={color}
-        color={bg}
-        borderColor={color}
-        name={buttonText}
-        hoverBg={bg}
-        hoverColor={color}
-        width={["full", "full", "full", "23rem"]}
-      />
+      <a href={buttonLink} target="_blank" rel="noreferrer">
+        <CommonButton
+          bg={color}
+          color={bg}
+          borderColor={color}
+          name={buttonText}
+          hoverBg={bg}
+          hoverColor={color}
+          width={["full", "full", "full", "23rem"]}
+        />
+      </a>
     </Flex>
   );
 };

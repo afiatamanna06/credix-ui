@@ -29,18 +29,25 @@ function LandingSectionDescription() {
         With Credix
       </Box>
       <Box fontSize={["md"]} mt={[0, 0, 0, "-6"]} maxW="30rem">
-        Private debt investments with sustainable, non-crypto correlated returns, backed by real-world assets
+        Private debt investments with sustainable, non-crypto correlated
+        returns, backed by real-world assets
       </Box>
       <Box>
-        <CommonButton
-          bg={color}
-          color={bg}
-          borderColor={color}
-          name="Onboard as an investor"
-          hoverBg={bg}
-          hoverColor={color}
-          width={["full", "full", "full", "min-content"]}
-        />
+        <a
+          href="https://credix-finance.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <CommonButton
+            bg={color}
+            color={bg}
+            borderColor={color}
+            name="Onboard as an investor"
+            hoverBg={bg}
+            hoverColor={color}
+            width={["full", "full", "full", "min-content"]}
+          />
+        </a>
       </Box>
     </Flex>
   );

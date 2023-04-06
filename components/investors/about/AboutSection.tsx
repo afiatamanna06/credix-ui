@@ -34,18 +34,27 @@ const AboutSection = () => {
         ))}
       </Flex>
       <Box mt="12">
-        <CommonButton
-          bg={color}
-          color={bg}
-          borderColor={color}
-          name="Launch App"
-          hoverBg={bg}
-          hoverColor={color}
-          width={["full", "full", "full", "17rem"]}
-        />
+        <a
+          href="https://credix-finance.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <CommonButton
+            bg={color}
+            color={bg}
+            borderColor={color}
+            name="Launch App"
+            hoverBg={bg}
+            hoverColor={color}
+            width={["full", "full", "full", "17rem"]}
+          />
+        </a>
       </Box>
       <a href={"https://docs.credix.finance/"} target="_blank" rel="noreferrer">
-        <Flex direction="column" textDecoration="underline">{`Read our documentation ->`}</Flex>
+        <Flex
+          direction="column"
+          textDecoration="underline"
+        >{`Read our documentation ->`}</Flex>
       </a>
     </Flex>
   );

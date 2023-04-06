@@ -17,6 +17,7 @@ const Investors = () => {
         buttonText="Onboard as an investor"
         border="#0046fa"
         borderHeight=".50rem"
+        buttonLink="https://credix-finance.vercel.app/"
       />
     </Flex>
   );
