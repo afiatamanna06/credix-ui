@@ -16,6 +16,7 @@ const Borrowers = () => {
         border="#f8bb00"
         borderHeight=".25rem"
         borderWidth={"5rem"}
+        buttonLink="https://share-eu1.hsforms.com/13OiNrrgQT0Gv2AF1cV52Uwfuste"
       />
     </Flex>
   );

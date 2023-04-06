@@ -32,6 +32,7 @@ function LandingSectionDescription() {
         Get access to better credit with lower cost of capital and shorter lead times
       </Box>
       <Box>
+      <a href="https://share-eu1.hsforms.com/13OiNrrgQT0Gv2AF1cV52Uwfuste" target="_blank" rel="noreferrer">
         <CommonButton
           bg={color}
           color={bg}
@@ -41,6 +42,7 @@ function LandingSectionDescription() {
           hoverColor={color}
           width={["full", "full", "full", "min-content"]}
         />
+        </a>
       </Box>
     </Flex>
   );
